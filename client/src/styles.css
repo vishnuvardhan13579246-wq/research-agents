@@ -1,0 +1,22 @@
+:root { --bg:#0f1117; --card:#181b24; --line:#2a2f3d; --text:#e8eaf0; --mute:#8b92a5; --accent:#6c8cff; --good:#3ecf8e; --bad:#ff6b6b; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
+.wrap { max-width:960px; margin:0 auto; padding:24px 16px 80px; }
+h1 { margin:0 0 4px; font-size:26px; } h2 { font-size:17px; margin:0 0 10px; }
+.sub { color:var(--mute); margin:0 0 20px; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; margin-bottom:16px; }
+textarea,input,select { width:100%; background:#0f1117; color:var(--text); border:1px solid var(--line); border-radius:8px; padding:10px; font:inherit; }
+textarea { min-height:150px; resize:vertical; }
+button { background:var(--accent); color:#fff; border:0; border-radius:8px; padding:10px 18px; font:inherit; font-weight:600; cursor:pointer; }
+button:disabled { opacity:.5; cursor:default; }
+button.ghost { background:transparent; border:1px solid var(--line); color:var(--text); }
+.row { display:flex; gap:12px; flex-wrap:wrap; } .row > * { flex:1; min-width:240px; }
+.pill { display:inline-block; padding:2px 10px; margin:3px 4px 3px 0; border-radius:999px; font-size:13px; border:1px solid var(--line); }
+.pill.good { color:var(--good); border-color:var(--good); } .pill.bad { color:var(--bad); border-color:var(--bad); }
+.badge { font-size:12px; color:var(--mute); border:1px solid var(--line); border-radius:6px; padding:2px 8px; }
+.err { color:var(--bad); } .mute { color:var(--mute); }
+pre { background:#0b0d12; border:1px solid var(--line); border-radius:8px; padding:12px; overflow:auto; font-size:13px; white-space:pre-wrap; }
+table { width:100%; border-collapse:collapse; font-size:14px; } th,td { text-align:left; padding:6px 10px; border-bottom:1px solid var(--line); } th { color:var(--mute); }
+a { color: var(--accent); }
+summary { cursor: pointer; margin: 6px 0; }
+.card h2 + .pill, .card h2:not(:first-child) { margin-top: 16px; }
